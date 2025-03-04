@@ -4,15 +4,15 @@ public class Point {
 
     @Override
     public String toString(){
-        return "("+x+","+y+")";
+        return "("+x+", "+y+")";
     }
 
     public String toSvg(){
-        return "<circle r=\""+x+"\" cx=\""+y+"\" cy=\"50\" fill=\"red\" />";
+        return "<circle r=\"5\" cx=\""+x+"\" cy=\""+y+"\" fill=\"black\" />";
     }
 
     public void translate(double dx, double dy){
-        x += dx;
+        this.x += dx;
         y += dy;
     }
 
